@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Obcesive · Propuesta</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Anton&family=Syncopate:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="lock">
+
+<div class="grain"></div><div class="vignette"></div>
+<div class="c-ring" id="cRing"></div><div class="c-dot" id="cDot"></div><div class="c-label mono" id="cLabel">Ver</div>
+
+<!-- Intro: cortina -->
+<div class="intro" id="intro">
+  <div class="half l"></div><div class="half r"></div>
+  <div class="mark goth chrome"><span>O</span></div>
+</div>
+
+<!-- Marquee -->
+<div class="marquee mono"><div class="track" id="mq"></div></div>
+
+<!-- Nav -->
+<header id="hdr">
+  <div class="wrap nav">
+    <nav class="left mono"><a class="lnk" href="#piezas">Piezas 1/1</a><a class="lnk" href="#collares">Collares</a></nav>
+    <a href="#" class="logo goth chrome">Obcesive</a>
+    <nav class="right mono"><a class="lnk" href="#lookbook">Lookbook</a><a class="bag" href="#" data-mag><i></i>Bolsa (0)</a></nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="curtain"></div>
+  <canvas id="gl"></canvas>
+  <div id="flash"></div>
+  <div class="hero-ui">
+    <div class="hero-meta mono"><span>León, Gto — MX</span><span>Hecho a mano · Piezas 1/1</span></div>
+    <div class="hero-title">
+      <h1 class="goth chrome">Obcesive</h1>
+      <div class="sub wide">Música · Moda · Dios</div>
+    </div>
+    <div class="hero-foot">
+      <p class="ital">Ropa intervenida y joyería sacra.<br>Cada pieza existe una sola vez.</p>
+      <div class="scroll-hint mono"><i></i>Scroll</div>
+      <a href="#piezas" class="btn cta mono" data-mag>Ver piezas <span>↓</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Statement -->
+<section class="statement">
+  <div class="wrap rv">
+    <span class="mono">( Manifiesto )</span>
+    <p>Entre el <span class="goth">altar</span> y la pista. Cadenas, cruces y tela <span class="ital r">rehecha a mano</span> en León.</p>
+  </div>
+</section>
+
+<!-- Drop poster -->
+<section class="poster">
+  <div class="bgph"></div>
+  <div class="in">
+    <h2 class="cond rv"><span class="split"><span>Nuevo drop</span></span><span class="split"><span>León gto only</span></span></h2>
+    <div class="row rv">
+      <div class="count">
+        <div><b id="cd">03</b><span class="mono">Días</span></div>
+        <div><b id="ch">12</b><span class="mono">Hrs</span></div>
+        <div><b id="cm">40</b><span class="mono">Min</span></div>
+        <div><b id="cs">00</b><span class="mono">Seg</span></div>
+      </div>
+      <p class="note ital">Colección Relicario. Pocas piezas, sin reposición.</p>
+      <a href="#" class="btn blue mono" data-mag id="notify">Avísame por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- Piezas 1/1 -->
+<section class="shop" id="piezas">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="idx mono">01 — Tienda</span><h2 class="cond">Piezas <span class="ital">1/1</span></h2></div>
+      <p class="side ital">Ropa intervenida, lentes y piezas de pasarela. Cuando se vende, se va al archivo.</p>
+    </div>
+    <div class="filters mono" id="filters">
+      <button class="on" data-f="all">Todo</button><button data-f="ropa">Ropa</button><button data-f="lentes">Lentes</button><button data-f="pasarela">Pasarela</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<!-- Collares -->
+<section class="shop collares" id="collares">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="idx mono">02 — Joyería</span><h2 class="cond">Colla<span class="ital">res</span></h2></div>
+      <p class="side ital">Rosarios, chokers y pulseras armadas pieza por pieza. Desliza →</p>
+    </div>
+    <div class="rail" id="rail"></div>
+  </div>
+</section>
+
+<!-- Lookbook -->
+<section class="lookbook" id="lookbook">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="idx mono">03 — Editorial</span><h2 class="cond">Look<span class="ital">book</span></h2></div>
+      <p class="side ital">Fotos de campaña, pasarela y noche.</p>
+    </div>
+    <div class="lb">
+      <div class="shot a rv"><div class="fill f1" data-par></div><div class="cap mono"><span>Pasarela</span><span>En vivo</span></div></div>
+      <div class="shot b rv"><div class="fill f2" data-par></div><div class="cap mono"><span>Flash</span><span>Editorial</span></div></div>
+      <div class="lb-quote rv"><p class="ital">“Lo sagrado también se usa de noche.”</p><span class="mono">— Obcesive</span></div>
+      <div class="shot c rv"><div class="fill f3" data-par></div><div class="cap mono"><span>Who you pray to</span><span>Círculo</span></div></div>
+      <div class="shot d rv"><div class="fill f4" data-par></div><div class="cap mono"><span>Relicario</span><span>Collares</span></div></div>
+      <div class="shot e rv"><div class="fill f5" data-par></div><div class="cap mono"><span>Velo blanco</span><span>Editorial</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Pop-up -->
+<section class="popup" id="popup">
+  <svg class="swirl" viewBox="0 0 520 260" fill="none" stroke="#f3a7cf" stroke-width="2"><path d="M20 160c100-120 340-120 450-30-80 80-330 90-420 15 90-65 260-70 350-15"/><path d="M380 40l40 40M420 40l-40 40M400 30v60"/></svg>
+  <div class="wrap">
+    <h2 class="cond rv"><span class="split"><span>Próximo</span></span><span class="split"><span>pop-up</span></span></h2>
+    <div class="cols mono rv">
+      <div><b>Fecha por anunciar</b>12:00 p.m. — 7:00 p.m.</div>
+      <div><b>León, Gto</b>Stock limitado</div>
+      <div><b>Piezas de pasarela</b>Sólo en persona</div>
+    </div>
+  </div>
+</section>
+
+<!-- Sistema / Panel -->
+<section class="system" id="sistema">
+  <div class="wrap sys-grid">
+    <div class="sys-copy rv">
+      <span class="mono" style="color:var(--red)">04 — Detrás de la tienda</span>
+      <h2 class="cond">No es solo una página. <span class="ital">Es tu sistema de venta.</span></h2>
+      <p>Un panel privado para que la marca suba piezas, cambie precios y marque lo vendido en segundos, desde el celular. Pruébalo: lo que cambies aquí se actualiza en la tienda en tiempo real.</p>
+      <ul class="feat">
+        <li><span class="mono">01</span><div><b>Inventario 1/1</b><span>Cada pieza con estado: disponible, apartada o vendida.</span></div></li>
+        <li><span class="mono">02</span><div><b>Pedidos y entregas</b><span>Punto de encuentro, domicilio en León o envío nacional.</span></div></li>
+        <li><span class="mono">03</span><div><b>Ventas por WhatsApp</b><span>Cada consulta llega con el nombre de la pieza y la entrega elegida.</span></div></li>
+        <li><span class="mono">04</span><div><b>Pagos en línea</b><span>Listo para conectar Mercado Pago o Stripe.</span></div></li>
+      </ul>
+    </div>
+    <div class="panel rv">
+      <div class="panel-bar"><i></i><i></i><i></i><span class="url">obcesive.mx/admin</span></div>
+      <div class="panel-body">
+        <div class="stats">
+          <div class="stat"><span class="mono">Disponibles</span><b id="sAv">0</b></div>
+          <div class="stat"><span class="mono">Apartadas</span><b id="sHo">0</b></div>
+          <div class="stat r"><span class="mono">Vendidas</span><b id="sSo">0</b></div>
+          <div class="stat"><span class="mono">Valor stock</span><b id="sVal">$0</b></div>
+        </div>
+        <div class="tbl-head"><span class="mono" style="color:var(--muted)">Inventario</span><button class="add mono" id="addBtn" data-mag>+ Agregar pieza</button></div>
+        <div class="tbl-wrap">
+          <table class="tbl"><thead><tr><th>Pieza</th><th>Tipo</th><th>Precio</th><th>Estado</th></tr></thead><tbody id="tbody"></tbody></table>
+        </div>
+        <div class="orders">
+          <div class="order"><span>#0142 · Choker crucifijo rojo</span><span>Punto de encuentro</span><span class="st p">Por entregar</span></div>
+          <div class="order"><span>#0141 · Hoodie de cruces</span><span>Envío nacional</span><span class="st e">Enviado</span></div>
+        </div>
+        <p class="panel-note mono">Demo · los cambios se guardan sólo en este navegador</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cómo comprar -->
+<section class="how">
+  <div class="wrap steps">
+    <div class="rv"><div class="n cond">01</div><h4 class="ital">Elige tu pieza</h4><p>Cada una es única. Si dice disponible, todavía es tuya.</p></div>
+    <div class="rv"><div class="n cond">02</div><h4 class="ital">Elige la entrega</h4><p>Punto de encuentro gratis en León, a domicilio o envío a todo México.</p></div>
+    <div class="rv"><div class="n cond">03</div><h4 class="ital">Paga o escríbenos</h4><p>Paga en línea o cierra por WhatsApp con tu pieza ya apartada.</p></div>
+  </div>
+</section>
+
+<!-- Archivo -->
+<section class="archive" id="archivo">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><span class="idx mono">05 — Memoria</span><h2 class="cond">Archi<span class="ital">vo</span></h2></div>
+      <p class="side ital">Piezas que ya encontraron dueño.</p>
+    </div>
+    <div class="arch mono rv" id="arch"></div>
+  </div>
+</section>
+
+<!-- Manifesto -->
+<section class="manifesto">
+  <div class="wrap rv">
+    <p class="ital">Cuando se va, se va.</p>
+    <div class="goth chrome">Obcesive</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><div class="goth chrome" style="font-size:44px;line-height:1">Obcesive</div><p class="ital" style="color:var(--muted);margin-top:10px">Música, moda y dios.<br>León, Guanajuato.</p></div>
+      <div class="mono"><h5>Tienda</h5><a href="#piezas">Piezas 1/1</a><a href="#collares">Collares</a><a href="#archivo">Archivo</a></div>
+      <div class="mono"><h5>Ayuda</h5><a href="#">Envíos</a><a href="#">Cuidados</a><a href="#">Preguntas</a></div>
+      <div class="mono"><h5>Contacto</h5><a href="#">Instagram</a><a href="#" id="footWa">WhatsApp</a></div>
+    </div>
+    <div class="legal mono"><span>© 2026 Obcesive</span><span>Mockup de propuesta · fotos y precios de ejemplo</span></div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="scrim" data-close></div>
+  <div class="sheet" role="dialog" aria-modal="true">
+    <button class="x" data-close aria-label="Cerrar">×</button>
+    <div class="pimg" id="mImg"></div>
+    <div class="sb">
+      <span class="cat mono" id="mCat"></span>
+      <h3 id="mName"></h3>
+      <div class="pr" id="mPrice"></div>
+      <p class="desc" id="mDesc"></p>
+      <dl class="spec"><dt>Edición</dt><dd>1 de 1</dd><dt>Material</dt><dd id="mMat"></dd><dt>Hecho en</dt><dd>León, Gto</dd></dl>
+      <p class="ship-t mono">Tipo de entrega</p>
+      <div class="ship" id="ship">
+        <label><input type="radio" name="ship" value="0" data-l="Punto de encuentro en León (gratis)" checked><span>Punto de encuentro<small>León, Gto · se coordina por WhatsApp</small></span><span class="mono">Gratis</span></label>
+        <label><input type="radio" name="ship" value="60" data-l="Envío a domicilio en León (+$60)"><span>A domicilio en León<small>1–2 días</small></span><span class="mono">+$60</span></label>
+        <label><input type="radio" name="ship" value="150" data-l="Envío nacional (+$150)"><span>Envío nacional<small>Paquetería con guía de rastreo</small></span><span class="mono">+$150</span></label>
+      </div>
+      <div class="total"><span class="mono" style="color:var(--muted)">Total</span><b id="mTotal"></b></div>
+      <div class="act">
+        <button class="btn red full mono" id="buyBtn" data-mag>Apartar y pagar</button>
+        <a class="wa-btn mono" id="waBtn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg>
+          Preguntar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast mono" id="toast"></div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
